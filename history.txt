@@ -1,45 +1,20 @@
-    1  lspci | grep -e vga
     2  lspci | grep -e VGA
-    3  lspci | grep -e video
-    4  lspci | grep -e VGA
     5  lspci | grep -e 3D
-    6  dnf update
     7  sudo dnf update
     8  sudo dnf upgrade
-    9  sudo dnf update && dnf upgrade
-   10  sudo dnf update && sudo dnf upgrade
-   11  sudo dnf update
-   12  sudo dnf upgrade
    13  sudo dnf upgrade --refresh
-   14  dnf search
    15  dnf search nvidia
    16  dnf search cuda
-   17  dnf search nvidia-driver
-   18  lspci | grep -e 3D
-   19  sudo dnf upgrade
-   20  sudo dnf upgrade --refresh
-   21  sudo dnf search nvidia
    22  sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-libs xorg-x11-drv-nvidia-libs.i686
-   23  >sudo akmods --force
    24  sudo akmods --force
    25  sudo dracut --force
    26  __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo
    27  journalctl --boot=0 -g nvidia
-   28  >sudo dnf install xrandr
    29  sudo dnf install xrandr
    30  sudo cp -p /usr/share/X11/xorg.conf.d/nvidia.conf /etc/X11/xorg.conf.d/nvidia.conf
    31  glxinfo
    32  glxinfo | egrep "OpenGL vendor|OpenGL renderer"
    33  nvidia-settings 
-   34  glxinfo
-   35  glxinfo | grep opengl
-   36  glxinfo | grep OpenGl
    37  glxinfo | grep OpenGL
-   38  cat /sys/module/nvidia_drm/parameters/modeset 
    39  sudo cat /sys/module/nvidia_drm/parameters/modeset 
-   40  vi .bash_history 
-   41  shutdown -P 0
-   42  glxinfo
    43  lspci | grep -e 3D
-   44  vi .bash_history 
-   45  history > history.txt
