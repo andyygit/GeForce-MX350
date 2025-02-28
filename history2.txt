@@ -1,0 +1,63 @@
+    1  top
+    2  htop
+    3  exit
+    4  sudo dnf update
+    5  reboot
+    6  sudo dnf update
+    7  sudo dnf upgrade --refresh
+    8  sudo dnf install akmod-nvidia xorg--x11-drv-nvidia-cuda
+    9  sudo dnf install xorg-x11-drv-nvidia-340xx akmod-nvidia-340xx xorg-x11-drv-nvidia-340xx-cuda
+   10  sudo dnf install akmod-nvidia xorg--x11-d
+   11  /sbin/lspci | grep -e 3D
+   12  udo dnf install akmod-nvidia xorg--x11-drv-nvidia-cuda
+   13  sudo dnf install akmod-nvidia xorg--x11-drv-nvidia-cuda
+   14  sudo dnf install xorg-x11-drv-nvidia-340xx akmod-nvidia-340xx xorg-x11-drv-nvidia-340xx-cuda
+   15  sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
+   16  reboot
+   17  nvidia-smi 
+   18  glxinfo | egrep "OpenGL vendor | OpenGL renderer"
+   19  glxinfo | egrep "OpenGL vendor |OpenGL renderer"
+   20  dnf search blender
+   21  sudo dnf install blender
+   22  dnf search gimp
+   23  sudo dnf install gimp
+   24  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+   25  echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+   26  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+   27  echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+   28  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+   29  echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+   30  cat /etc/yum.repos.d/vscode.repo
+   31  dnf check-update
+   32  sudo dnf install code
+   33  dnf search steam
+   34  dnf install steam
+   35  sudo dnf install steam
+   36  dnf update openh264
+   37  sudo dnf update openh264
+   38  sudo dnf install libavcodec-freeworld --allowerasing
+   39  dnf search vlc
+   40  sudo dnf install vlc
+   41  sudo dnf install libavcodec-freeworld --allowerasing
+   42  sudo dnf update openh264
+   43  sudo dnf update -y
+   44  reboot
+   45  history | less
+   46  nvidia-smi
+   47  nvcc
+   48  lsmod | grep nvidia
+   49  nvidia-smi
+   50  sudo dnf config-manager addrepo --from-repofile=https://developer.download.nvidia.com/compute/cuda/repos/fedora41/$(uname -m)/cuda-fedora41.repo
+   51  sudo dnf clean all
+   52  sudo dnf module disable nvidia-driver
+   53  sudo dnf module disable nvidia-driver --skip-unavailable
+   54  sudo dnf config-manager setopt cuda-fedora41-$(uname -m).exclude=nvidia-driver,nvidia-modprobe,nvidia-persistenced,nvidia-settings,nvidia-libXNVCtrl,nvidia-xconfig
+   55  sudo dnf -y install cuda-toolkit
+   56  scl run devtoolset-7 blender
+   57  sudo yum install install http://developer.download.nvidia.com/compute/cuda/repos/fedora20/x86_64/cuda-repo-fedora20-6.5-14.x86_64.rpm
+   58  sudo yum install cuda
+   59  reboot
+   60  pwd
+   61  ls
+   62  cd Documents/
+   63  history > hist.txt
